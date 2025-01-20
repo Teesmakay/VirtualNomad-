@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Nomad - Welcome to Seamless Relocation</title>
+  <meta name="description" content="Relocate to Cape Town effortlessly with our expert relocation services tailored for digital nomads and remote workers. Virtual tours, legal support, and cultural orientation all in one place.">
+  <meta name="keywords" content="relocation services, Cape Town, digital nomads, virtual tours, legal support, cultural orientation">
+  <link rel="canonical" href="https://www.virtualnomad.com/">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXX-Y');
+  </script>
+
+  <!-- CSS and Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles.css">
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <form id="booking-form" action="../backend/storebooking.php" method="POST"></form>
+  <script>
+    emailjs.init("bDD9Bs-d_KntBXRt_"); // Replace with your actual Public Key
+  </script>
+
+  <style>
+    /* Logo styling */
+    .logo {
+      width: 50px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.png" alt="Virtual Nomad Logo" class="logo me-2">
+        <span class="fw-bold text-uppercase">Virtual Nomad</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about-us">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Booking Section -->
+  <div id="booking-section" class="container mt-5">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Book Your Service</h5>
+        </div>
+        <div class="modal-body">
+          <form id="bookingForm">
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="servicePackage" class="form-label">Select Package</label>
+              <select class="form-control" id="servicePackage" name="servicePackage" required>
+                <option value="">-- Select a Package --</option>
+                <option value="Basic">$250 - Basic</option>
+                <option value="Standard">$500 - Standard</option>
+                <option value="Premium">$800 - Premium</option>
+              </select>
+            </div>
+            
+            <div class="mb-3">
+              <label for="addons" class="form-label">Add-Ons</label>
+              <select multiple class="form-control" id="addons">
+                <option value="Extra Local Experiences">Extra Local Experiences - $100</option>
+                <option value="Monthly Support Subscription">Monthly Local Support Subscription - $50</option>
+                <option value="Personal Concierge">Personal Concierge - $150</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="customRequest" class="form-label">Custom Request (Optional)</label>
+              <textarea class="form-control" id="customRequest" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Booking submitted! Thank you for choosing our services.");
+    });
+  </script>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="container mt-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="contact-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="p-3 border rounded">
+          <h5>Contact Details</h5>
+          <p><strong>Email:</strong> <a href="mailto:bookings@virtualnomad.com">bookings@virtualnomad.com</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/27815587973" target="_blank">+27 81 558 7973</a></p>
+          <p><strong>Call:</strong> <a href="tel:+27847290664">+27 84 729 0664</a></p>
+          <h5>Follow Us</h5>
+          <p>
+            <a href="https://facebook.com" target="_blank" class="me-2 text-primary"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://twitter.com" target="_blank" class="me-2 text-info"><i class="fab fa-x-twitter fa-lg"></i></a>
+            <a href="https://instagram.com" target="_blank" class="text-danger"><i class="fab fa-instagram fa-lg"></i></a>
+          </p>
+        </div>
+        <div class="mt-4">
+          <h5>Our Location</h5>
+          <div class="ratio ratio-4x3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.7924898836533!2d18.41812317629829!3d-33.928992080652726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc67650d104d19%3A0x4d0e33b4ad9fca30!2sCape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1695380505678!5m2!1sen!2sza" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="../crs/scripts.js"></script>
+
+
+</html>
