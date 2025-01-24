@@ -64,7 +64,6 @@
     </div>
   </nav>
 
-  <!-- Booking Section -->
   <div id="booking-section" class="container mt-5">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -72,36 +71,35 @@
           <h5 class="modal-title">Book Your Service</h5>
         </div>
         <div class="modal-body">
-          <form id="bookingForm">
+          <form id="bookingForm" action="https://formspree.io/f/xanqyggv" method="POST">
             <div class="mb-3">
               <label for="fullName" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="fullName" required>
+              <input type="text" class="form-control" name="fullName" id="fullName" required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
+              <input type="email" class="form-control" name="email" id="email" required>
             </div>
             <div class="mb-3">
               <label for="servicePackage" class="form-label">Select Package</label>
-              <select class="form-control" id="servicePackage" name="servicePackage" required>
+              <select class="form-control" name="servicePackage" id="servicePackage" required>
                 <option value="">-- Select a Package --</option>
                 <option value="Basic">$250 - Basic</option>
                 <option value="Standard">$500 - Standard</option>
                 <option value="Premium">$800 - Premium</option>
               </select>
             </div>
-            
             <div class="mb-3">
               <label for="addons" class="form-label">Add-Ons</label>
-              <select multiple class="form-control" id="addons">
+              <select multiple class="form-control" name="addons[]" id="addons">
                 <option value="Extra Local Experiences">Extra Local Experiences - $100</option>
-                <option value="Monthly Support Subscription">Monthly Local Support Subscription - $50</option>
+                <option value="Monthly Support Subscription">Monthly Support Subscription - $50</option>
                 <option value="Personal Concierge">Personal Concierge - $150</option>
               </select>
             </div>
             <div class="mb-3">
               <label for="customRequest" class="form-label">Custom Request (Optional)</label>
-              <textarea class="form-control" id="customRequest" rows="3"></textarea>
+              <textarea class="form-control" name="customRequest" id="customRequest" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
           </form>
@@ -109,8 +107,8 @@
       </div>
     </div>
   </div>
-
-  <script>
+  
+<script>
     document.getElementById("bookingForm").addEventListener("submit", function(e) {
       e.preventDefault();
       alert("Booking submitted! Thank you for choosing our services.");
