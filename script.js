@@ -28,32 +28,26 @@ document.querySelectorAll('.learn-more-btn').forEach(button => {
 });
 
 
-// Contact Form Handling
-  document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("bDD9Bs-d_KntBXRt_"); // Initialize EmailJS with your public key
+<script>
+  (function() {
+    emailjs.init("pLWCkusN34A8Sb8S9"); // Updated Public Key
+  })();
 
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the default form submission behavior
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-        // Collect form data
-        const formData = {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            message: document.getElementById("message").value,
-        };
+    emailjs.sendForm("service_ejvwqzl", "template_c96yqan", this)
+      .then(
+        function() {
+          alert("Message Sent Successfully!");
+        },
+        function(error) {
+          alert("Failed to send message. Try again! Error: " + JSON.stringify(error));
+        }
+      );
+  });
+</script>
 
-        // EmailJS form submission
-        emailjs.send("service_k1f6xcb", "template_i65xssp", formData)
-            .then(function () {
-                alert("Your message has been sent successfully!");
-                document.getElementById("contact-form").reset(); // Clear the form after successful submission
-            })
-            .catch(function (error) {
-                console.error("Failed to send the message: ", error);
-                alert("Failed to send the message. Please try again later.");
-            });
-    });
-});
 
 
 // Experience Booking Form Submission
