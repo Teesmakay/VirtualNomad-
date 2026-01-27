@@ -4,23 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Virtual Nomad | Seamless Relocation to Cape Town</title>
+  <title>Virtual Nomad - Welcome to Seamless Relocation</title>
+  <meta name="description" content="Relocate to Cape Town effortlessly with our expert relocation services tailored for digital nomads and remote workers. Virtual tours, legal support, and cultural orientation all in one place.">
+  <meta name="keywords" content="relocation services, Cape Town, digital nomads, virtual tours, legal support, cultural orientation">
+  <link rel="canonical" href="https://www.virtualnomad.com/">
 
-  <meta name="description" content="Relocate to Cape Town effortlessly with Virtual Nomad. Virtual property tours, agent-led video calls, relocation support and concierge services.">
-  <meta name="keywords" content="Cape Town relocation, virtual property tours, digital nomads, property viewing South Africa">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-XXXXX-Y');
+  </script>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-  <!-- EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../src/styles.css">
 
   <style>
     .logo {
-      width: 45px;
+      width: 50px;
       height: auto;
     }
   </style>
@@ -28,137 +34,170 @@
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="logo.png" class="logo me-2" alt="Virtual Nomad">
-      <strong>Virtual Nomad</strong>
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="logo.png" alt="Virtual Nomad Logo" class="logo me-2">
+      <span class="fw-bold text-uppercase">Virtual Nomad</span>
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="nav">
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/index.html#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="/index.html#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- PRICING SECTION -->
-<section class="container py-5">
+<div id="pricing-section" class="container py-5">
   <h1 class="text-center mb-4">Relocation Service Packages</h1>
 
   <div class="row">
     <div class="col-md-4">
-      <div class="card shadow-sm">
+      <div class="card mb-4 shadow-sm">
         <div class="card-body">
-          <h5>Basic Package</h5>
-          <ul>
-            <li>Up to 3 virtual property tours</li>
-            <li>Agent-led video call</li>
-            <li>Area & lifestyle insights</li>
+          <h5 class="card-title">Basic Package</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>One virtual property tour (up to 3 properties)</li>
+            <li>Basic legal and logistical guidance</li>
+            <li>Cultural orientation guide</li>
           </ul>
+          <button class="btn btn-primary btn-block" onclick="window.location.href='booking.html#booking-section'">Book Now</button>
         </div>
       </div>
     </div>
 
     <div class="col-md-4">
-      <div class="card shadow-sm">
+      <div class="card mb-4 shadow-sm">
         <div class="card-body">
-          <h5>Standard Package</h5>
-          <ul>
-            <li>Up to 5 virtual property tours</li>
-            <li>Shortlisted property recommendations</li>
-            <li>Local market advice</li>
+          <h5 class="card-title">Standard Package</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Virtual property tours for up to 5 properties</li>
+            <li>Full legal and logistical support</li>
+            <li>One personalized itinerary</li>
+            <li>One virtual networking event</li>
           </ul>
+          <button class="btn btn-primary btn-block" onclick="window.location.href='booking.html#booking-section'">Book Now</button>
         </div>
       </div>
     </div>
 
     <div class="col-md-4">
-      <div class="card shadow-sm">
+      <div class="card mb-4 shadow-sm">
         <div class="card-body">
-          <h5>Premium Package</h5>
-          <ul>
-            <li>Unlimited virtual viewings</li>
-            <li>Dedicated relocation agent</li>
-            <li>3 months post-arrival support</li>
+          <h5 class="card-title">Premium Package</h5>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Unlimited virtual property tours</li>
+            <li>Complete legal and logistical support</li>
+            <li>Two custom itineraries for local experiences</li>
+            <li>Ongoing virtual support for three months</li>
           </ul>
+          <button class="btn btn-primary btn-block" onclick="window.location.href='booking.html#booking-section'">Book Now</button>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- CONTACT -->
-<section id="contact" class="container py-5">
+  <h2 class="text-center my-5">Add-On Services</h2>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Extra Local Experiences</h5>
+          <p class="card-text">$100 per experience</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Monthly Local Support Subscription</h5>
+          <p class="card-text">$50/month</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Personal Concierge for Social Integration</h5>
+          <p class="card-text">$150</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contact" class="container mt-5">
   <h2 class="text-center mb-4">Contact Us</h2>
 
   <div class="row">
     <div class="col-md-6">
-      <!-- ✅ FIXED FORM -->
       <form id="contact-form">
         <div class="mb-3">
           <label class="form-label">Name</label>
-          <input type="text" class="form-control" name="user_name" required>
+          <input type="text" class="form-control" name="name" required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Email</label>
-          <input type="email" class="form-control" name="user_email" required>
+          <input type="email" class="form-control" name="email" required>
         </div>
 
         <div class="mb-3">
           <label class="form-label">Message</label>
-          <textarea class="form-control" name="message" rows="4" required></textarea>
+          <textarea class="form-control" name="message" rows="3" required></textarea>
         </div>
 
-        <button class="btn btn-primary w-100">Send Message</button>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
       </form>
     </div>
 
     <div class="col-md-6">
-      <div class="border rounded p-3">
-        <p><strong>Email:</strong> info@virtualnomad.co.za</p>
-        <p><strong>WhatsApp:</strong> +27 81 558 7973</p>
-        <p><strong>Location:</strong> Cape Town, South Africa</p>
+      <div class="p-3 border rounded">
+        <h5>Contact Details</h5>
+        <p><strong>Email:</strong> <a href="mailto:info@virtualnomad.co.za">info@virtualnomad.co.za</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/27815587973" target="_blank">+27 81 558 7973</a></p>
+        <p><strong>Call:</strong> <a href="tel:+27847290664">+27 84 729 0664</a></p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center p-3">
-  © 2025 Virtual Nomad Cape Town
+<footer class="bg-dark text-white text-center p-3 mt-5">
+  <p>&copy; 2025 Virtual Nomad Cape Town. All rights reserved.</p>
 </footer>
 
-<!-- BOOTSTRAP -->
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<!-- EMAILJS SCRIPT -->
 <script>
-  emailjs.init("bDD9Bs-d_KntBXRt_");
+  (function () {
+    emailjs.init("pLWCkusN34A8Sb8S9");
+  })();
 
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_ejvwqzl",
-      "template_c96yqan",
-      this
-    ).then(() => {
-      alert("Message sent successfully!");
-      this.reset();
-    }, (error) => {
-      alert("Error sending message");
-      console.error(error);
-    });
+    emailjs.sendForm("service_ejvwqzl", "template_c96yqan", this)
+      .then(() => {
+        alert("Message Sent Successfully!");
+        this.reset();
+      })
+      .catch(error => {
+        alert("Failed to send message: " + error.text);
+      });
   });
 </script>
 
