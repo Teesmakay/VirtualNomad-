@@ -13,6 +13,19 @@
   <link rel="canonical" href="https://www.virtualnomad.co.za/">
   <link rel="icon" type="image/png" href="logo.png">
 
+  <!-- GEO / LOCAL SEO -->
+  <meta name="geo.region" content="ZA-WC">
+  <meta name="geo.placename" content="Cape Town">
+  <meta name="geo.position" content="-33.9249;18.4241">
+  <meta name="ICBM" content="-33.9249, 18.4241">
+
+  <!-- Robots / SERP Control -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+  <!-- Performance Preconnect -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://media.istockphoto.com">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Virtual Nomad | Relocation & Virtual Property Tours in Cape Town">
@@ -21,7 +34,7 @@
   <meta property="og:url" content="https://www.virtualnomad.co.za/">
   <meta property="og:image" content="https://www.virtualnomad.co.za/logo.png">
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics (placeholder – upgrade to GA4 later) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -53,7 +66,38 @@
       "latitude": -33.9249,
       "longitude": 18.4241
     },
-    "areaServed": "Cape Town"
+    "areaServed": "Cape Town",
+    "sameAs": [
+      "https://www.facebook.com/virtualnomad",
+      "https://www.instagram.com/virtualnomad",
+      "https://www.linkedin.com/company/virtualnomad"
+    ]
+  }
+  </script>
+
+  <!-- PRIORITY SERVICE SCHEMA: AIRPORT TRANSFERS -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Airport Transfers & City Tours in Cape Town",
+    "serviceType": "Airport Transfers and City Tours",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Virtual Nomad Cape Town"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Cape Town"
+    },
+    "description": "Reliable airport transfers and guided city tours in Cape Town for visitors, digital nomads, and relocating professionals.",
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceLocation": {
+        "@type": "Place",
+        "name": "Cape Town International Airport"
+      }
+    }
   }
   </script>
 
@@ -134,6 +178,7 @@
     </div>
   </div>
 </nav>
+
 <!-- HERO -->
 <section class="hero vh-100">
   <div id="heroCarousel" class="carousel slide vh-100" data-bs-ride="carousel">
