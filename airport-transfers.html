@@ -7,23 +7,21 @@
   <title>Airport Transfers & City Tours in Cape Town | Virtual Nomad</title>
 
   <meta name="description" content="Reliable airport transfers, private pickups, and guided city tours in Cape Town. Ideal for visitors, property viewings, and people relocating to Cape Town.">
-  <meta name="keywords" content="Cape Town airport transfers, city tours Cape Town, airport pickup Cape Town, relocation services Cape Town, private transfers Cape Town">
 
   <link rel="canonical" href="https://www.virtualnomad.co.za/airport-transfers.html">
 
-  <!-- GEO / LOCAL SEO -->
+  <!-- LOCAL SEO -->
   <meta name="geo.region" content="ZA-WC">
   <meta name="geo.placename" content="Cape Town">
   <meta name="geo.position" content="-33.9696;18.5973">
   <meta name="ICBM" content="-33.9696, 18.5973">
 
   <!-- Robots -->
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="robots" content="index, follow">
 
   <!-- Performance -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-  <link rel="dns-prefetch" href="https://media.istockphoto.com">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Airport Transfers & City Tours in Cape Town | Virtual Nomad">
@@ -32,31 +30,31 @@
   <meta property="og:url" content="https://www.virtualnomad.co.za/airport-transfers.html">
   <meta property="og:image" content="https://www.virtualnomad.co.za/airport-transfers-city-tours-cape-town.jpg">
 
-  <!-- Local Business + Service Schema -->
+  <!-- Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Airport Transfers & City Tours in Cape Town",
-    "serviceType": "Airport Transfers and Guided City Tours",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Virtual Nomad Cape Town",
-      "url": "https://www.virtualnomad.co.za/",
-      "telephone": "+27 84 729 0664"
+    "@type": "LocalBusiness",
+    "name": "Virtual Nomad Cape Town",
+    "url": "https://www.virtualnomad.co.za/",
+    "telephone": "+27 84 729 0664",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cape Town",
+      "addressRegion": "Western Cape",
+      "addressCountry": "ZA"
     },
     "areaServed": {
       "@type": "City",
       "name": "Cape Town"
     },
-    "availableChannel": {
-      "@type": "ServiceChannel",
-      "serviceLocation": {
-        "@type": "Place",
-        "name": "Cape Town International Airport"
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Airport Transfers & City Tours in Cape Town"
       }
-    },
-    "description": "Reliable airport transfers, private pickups, property viewing transport and guided city tours in Cape Town."
+    }
   }
   </script>
 
@@ -94,47 +92,27 @@
   }
   </script>
 
-  <!-- Bootstrap CSS -->
+  <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="logo.png" alt="Virtual Nomad Cape Town" height="40" class="me-2">
+      <img src="logo.png" alt="Virtual Nomad Cape Town" height="40" class="me-2" loading="lazy">
       <span class="fw-bold text-uppercase">Virtual Nomad</span>
     </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="index.html#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-      </ul>
-    </div>
   </div>
 </nav>
 
-<!-- HEADER -->
 <header class="main-header position-relative" style="height:60vh;">
   <img src="airport-transfers-city-tours-cape-town.jpg"
        alt="Airport transfers and city tours in Cape Town"
-       class="w-100 h-100 object-fit-cover">
+       class="w-100 h-100 object-fit-cover"
+       loading="eager">
 
   <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center"
        style="background:rgba(0,0,0,0.45);">
@@ -143,7 +121,7 @@
   </div>
 </header>
 
-<!-- MAIN CONTENT -->
+<main>
 <section class="container my-5">
 
   <div class="text-center mb-5">
@@ -154,91 +132,40 @@
     </p>
   </div>
 
- <!-- SERVICES GRID -->
 <div class="row g-4">
 
-  <!-- Airport Transfers -->
   <div class="col-md-6">
     <div class="card h-100 shadow-sm">
-      <img src="airport-transfers-cape-town.jpg"
-           class="card-img-top"
-           alt="Luxury airport transfers from Cape Town International Airport with private vehicles">
+      <img src="airport-transfers-cape-town.jpg" class="card-img-top" alt="Luxury airport transfers from Cape Town International Airport with private vehicles" loading="lazy">
       <div class="card-body">
-        <h5 class="card-title">Airport Transfers</h5>
-        <p class="card-text">
-          Private and reliable airport pickups and drop-offs from Cape Town International Airport.
-          Ideal for visitors, remote workers, and clients relocating to the city.
-        </p>
+        <h3 class="card-title">Airport Transfers</h3>
+        <p class="card-text">Private and reliable airport pickups and drop-offs from Cape Town International Airport.</p>
         <a href="booking.html" class="btn btn-primary">Book Transfer</a>
       </div>
     </div>
   </div>
 
-  <!-- Guided City Tours -->
   <div class="col-md-6">
     <div class="card h-100 shadow-sm">
-      <img src="guided-city-tours-cape-town.jpg"
-           class="card-img-top"
-           alt="Guided city tours of Cape Town including Table Mountain beaches and neighbourhoods">
+      <img src="guided-city-tours-cape-town.jpg" class="card-img-top" alt="Guided city tours of Cape Town including Table Mountain beaches and neighbourhoods" loading="lazy">
       <div class="card-body">
-        <h5 class="card-title">Guided City Tours</h5>
-        <p class="card-text">
-          Explore Cape Town with guided city tours including Table Mountain,
-          beaches, neighbourhoods, and lifestyle areas perfect for relocation planning.
-        </p>
+        <h3 class="card-title">Guided City Tours</h3>
+        <p class="card-text">Explore Cape Town with guided city tours including Table Mountain and beaches.</p>
         <a href="booking.html" class="btn btn-primary">Book Tour</a>
       </div>
     </div>
   </div>
 
-  <!-- Property Viewing Transfers -->
-  <div class="col-md-6">
-    <div class="card h-100 shadow-sm">
-      <img src="property-viewing-transfers-cape-town.jpg"
-           class="card-img-top"
-           alt="Property viewing transport services across Cape Town for buyers and renters">
-      <div class="card-body">
-        <h5 class="card-title">Property Viewing Transfers</h5>
-        <p class="card-text">
-          We transport you to property viewings across Cape Town, whether you're buying,
-          renting, or exploring neighbourhoods before making a decision.
-        </p>
-        <a href="booking.html" class="btn btn-primary">Schedule Viewing</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Arrival & Orientation -->
-  <div class="col-md-6">
-    <div class="card h-100 shadow-sm">
-      <img src="arrival-orientation-cape-town.jpg"
-           class="card-img-top"
-           alt="Arrival orientation and relocation support services in Cape Town">
-      <div class="card-body">
-        <h5 class="card-title">Arrival & Orientation Support</h5>
-        <p class="card-text">
-          First time in Cape Town? We help you get settled with area orientation,
-          lifestyle guidance, and local insights once you arrive.
-        </p>
-        <a href="booking.html" class="btn btn-primary">Get Started</a>
-      </div>
-    </div>
-  </div>
-
 </div>
-
-  </div>
 </section>
-<!-- FOOTER -->
-<footer class="bg-dark text-white text-center py-4 mt-5">
+</main>
+
+<footer class="bg-dark text-white text-center py-4">
   <p class="mb-1">&copy; 2025 Virtual Nomad Cape Town. All rights reserved.</p>
-  <div>
-    <a href="index.html#home" class="text-white me-3">Home</a>
-    <a href="index.html#services" class="text-white me-3">Services</a>
-    <a href="index.html#about" class="text-white me-3">About Us</a>
-    <a href="index.html#contact" class="text-white">Contact</a>
-  </div>
 </footer>
+
+<!-- JS moved for performance -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
